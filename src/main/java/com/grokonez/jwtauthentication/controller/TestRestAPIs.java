@@ -12,7 +12,7 @@ public class TestRestAPIs {
 	@GetMapping("/api/test/user")
 	@PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
 	public String userAccess() {
-		return ">>> Hoy toca TFM";
+		return ">>> Hoy toca TFM 2";
 	}
 
 	@GetMapping("/api/test/pm")
